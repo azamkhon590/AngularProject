@@ -1,0 +1,18 @@
+<div class="container my-5">
+  <h1 class="mb-3">Add</h1>
+  <form (ngSubmit)="addProduct()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="addProducts.name">
+    </div>
+    <div class="mb-3">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="addProducts.quantity">
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input type="number" class="form-control" id="price" name="price" [(ngModel)]="addProducts.price">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+</div>
